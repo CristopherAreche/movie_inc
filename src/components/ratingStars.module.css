@@ -1,0 +1,57 @@
+.mainContainer {
+  padding: 0.5rem 0 1.3rem 0;
+}
+.mainSubtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--color-secondary-text);
+}
+
+.confirmation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-success-text);
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.container {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.stars {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.starButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.submitButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--color-failed-text);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}

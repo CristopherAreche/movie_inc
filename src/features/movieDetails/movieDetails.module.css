@@ -1,0 +1,111 @@
+.mainContainer {
+  padding: 0 1rem;
+}
+.mainSubtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--color-secondary-text);
+}
+
+.backButton {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-accent);
+}
+
+.details {
+  color: var(--color-primary-text);
+  background-color: var(--color-background);
+  padding-bottom: 2rem;
+}
+
+.backdrop {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  display: flex;
+  background-color: var(--color-surface);
+  border-radius: 12px;
+  margin: -60px 1rem 1rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  position: relative;
+  z-index: 2;
+}
+
+.poster {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.info {
+  margin-left: 1rem;
+  flex: 1;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--color-secondary-text);
+  margin: 0.5rem 0;
+}
+
+.rating {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-star);
+}
+.section {
+  margin: 1rem 0;
+}
+.synopsis {
+  font-size: 0.9rem;
+  color: var(--color-secondary-text);
+  background-color: var(--color-surface);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.characterList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.similarList {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.75rem;
+}
+
+.card__content {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.card__favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
+}

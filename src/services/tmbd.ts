@@ -3,10 +3,7 @@ import { MovieDetailsType, CastMember, Movie } from "./tmbd.types";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const BASE_URL = "https://api.themoviedb.org/3";
 
-export async function fetchNowPlayingMovies(
-  API_KEY?: string,
-  BASE_URL?: string
-): Promise<Movie[]> {
+export async function fetchNowPlayingMovies(): Promise<Movie[]> {
   try {
     const response = await fetch(
       `${BASE_URL}/movie/now_playing?api_key=${API_KEY}&language=en-US`

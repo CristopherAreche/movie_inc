@@ -6,7 +6,7 @@ import SearchBar from "../../components/SearchBar";
 import MovieCard from "../../components/MovieCard";
 import { sortMoviesByTitle } from "../../utils/sort";
 import { useSearch } from "../../provider/SearchContext";
-import styles from "./Home.module.css";
+import styles from "./home.module.css";
 
 export default function Home() {
   const [movies, setMovies] = useState<Movie[]>([]);

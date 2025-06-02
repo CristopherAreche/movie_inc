@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import SearchBar from "../../components/SearchBar";
-import styles from "./FavoritesPage.module.css";
+import styles from "./favoritesPage.module.css";
 import { useEffect, useState } from "react";
 import { getFavorites } from "../../utils/favorites";
 import { Movie } from "../../services/tmbd.types";

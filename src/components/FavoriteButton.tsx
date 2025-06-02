@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { isFavorite, addFavorite, removeFavorite } from "../utils/favorites";
-import styles from "./FavoriteButton.module.css";
+import styles from "./favoriteButton.module.css";
 import { Movie } from "../services/tmbd.types";
 
 type Props = {

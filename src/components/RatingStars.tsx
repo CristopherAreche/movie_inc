@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaCheckCircle, FaStar } from "react-icons/fa";
-import styles from "./RatingStars.module.css";
+import styles from "./ratingStars.module.css";
 
 type Props = {
   movieId: number;

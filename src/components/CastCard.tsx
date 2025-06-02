@@ -1,4 +1,4 @@
-import styles from "./CastCard.module.css";
+import styles from "./castCard.module.css";
 
 type Props = {
   name: string;

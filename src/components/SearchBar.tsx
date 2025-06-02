@@ -1,5 +1,5 @@
 import { FaSearch } from "react-icons/fa";
-import styles from "./SearchBar.module.css";
+import styles from "./searchBar.module.css";
 import { useSearch } from "../provider/SearchContext";
 export default function SearchBar() {
   const { query, setQuery } = useSearch();

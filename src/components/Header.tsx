@@ -2,7 +2,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { HiOutlineMenu } from "react-icons/hi";
 import { FaHeart } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
-import styles from "./Header.module.css";
+import styles from "./header.module.css";
 
 export default function Header() {
   const location = useLocation();

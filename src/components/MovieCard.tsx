@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./MovieCard.module.css";
+import styles from "./movieCard.module.css";
 import { FaStar } from "react-icons/fa";
 import { fetchMovieDetails } from "../services/tmbd";
 import { Movie } from "../services/tmbd.types";

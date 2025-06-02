@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "../features/home/Home";
-import MovieDetails from "../features/movieDetails/MovieDetails";
-import FavoritesPage from "../features/favorites/FavoritesPage";
+import Home from "../pages/home/Home";
+import MovieDetails from "../pages/movieDetails/MovieDetails";
+import FavoritesPage from "../pages/favorites/FavoritesPage";
 
 export default function AppRoutes() {
   return (

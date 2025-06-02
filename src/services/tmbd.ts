@@ -17,9 +17,12 @@ export async function fetchNowPlayingMovies(): Promise<Movie[]> {
 }
 
 export async function fetchMovieDetails(id: number): Promise<MovieDetailsType> {
-  const res = await fetch(
-    `${BASE_URL}/movie/${id}?api_key=${API_KEY}&language=en-US`
-  );
+  const url = new URL(`${BASE_URL}/movie/${id}`);
+  url.search = new URLSearchParams({
+    api_key: API_KEY,
+    language: "en-US",
+  }).toString();
+  const res = await fetch(url);
   if (!res.ok) throw new Error("Error fetching movie details");
   const data = await res.json();
   return data;
@@ -28,9 +31,14 @@ export async function fetchMovieDetails(id: number): Promise<MovieDetailsType> {
 export async function fetchMovieCredits(
   movieId: number
 ): Promise<CastMember[]> {
-  const response = await fetch(
+  const url = new URL(
     `${BASE_URL}/movie/${movieId}/credits?api_key=${API_KEY}`
   );
+  url.search = new URLSearchParams({
+    api_key: API_KEY,
+    language: "en-US",
+  }).toString();
+  const response = await fetch(url);
   if (!response.ok) throw new Error("Error fetching movie credits");
   const data = await response.json();
   return data.cast;
